@@ -66,7 +66,7 @@ def get_web(url):
     content+='</tbody></table>'
 
     try:
-        smtp3.send_email('近期招标通知-阿夫特招标采集平台自动发送',content)
+        smtp3.send_email('近期招标通知-招标采集平台自动发送',content)
     except Exception as e:
         print('邮件发送失败:'+e.args[0]) 
 
